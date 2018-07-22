@@ -1,7 +1,17 @@
 import React from "react";
-import { Col, Container, Row, Button, Card, CardBody } from "reactstrap";
-
-const AwardCard = props => (
+import {
+  Col,
+  Container,
+  Row,
+  Form,
+  FormGroup,
+  Input,
+  Label,
+  Button,
+  Card,
+  CardBody
+} from "reactstrap";
+const KudosForm = props => (
   <Card>
     <CardBody className="mx-auto">
       <img
@@ -21,5 +31,4 @@ const AwardCard = props => (
     </CardBody>
   </Card>
 );
-
-export default AwardCard;
+export default KudosForm;
