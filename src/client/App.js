@@ -59,11 +59,7 @@ class App extends Component {
         <br />
         <Row>
           <Col md="12" lg="3">
-            <Card>
-              <CardBody className="mx-auto">
-                <Button color="success">Give Kudos</Button>
-              </CardBody>
-            </Card>
+            <KudosForm />
           </Col>
           <Col md="12" lg="9">
             {this.state.awards.map(elem => (
