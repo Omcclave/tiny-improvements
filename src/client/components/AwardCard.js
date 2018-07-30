@@ -16,6 +16,7 @@ const AwardCard = props => (
         width="100px"
       />
       <h6>{props.receiver}</h6>
+      <h6>{props.sender} </h6>
       <h2>{props.title}</h2>
       <p>{props.comment}</p>
     </CardBody>
