@@ -3,14 +3,15 @@ import {
   Col,
   Container,
   Row,
+  Card,
+  CardBody,
+  Button,
   Form,
   FormGroup,
   Input,
-  Label,
-  Button,
-  Card,
-  CardBody
+  Label
 } from "reactstrap";
+
 const KudosForm = props => (
   <Form>
     <FormGroup>
@@ -22,9 +23,7 @@ const KudosForm = props => (
         onChange={props.updatereceiver}
         value={props.receiver}
       >
-        {props.users.map((elem, index) => (
-          <option key={index}> {elem.name} </option>
-        ))}
+        {props.users.map((e, index) => <option key={index}> {e.name} </option>)}
       </Input>
     </FormGroup>
     <FormGroup>
@@ -36,9 +35,7 @@ const KudosForm = props => (
         onChange={props.updatesender}
         value={props.sender}
       >
-        {props.users.map((elem, index) => (
-          <option key={index}> {elem.name} </option>
-        ))}
+        {props.users.map((e, index) => <option key={index}> {e.name} </option>)}
       </Input>
     </FormGroup>
     <FormGroup>
@@ -46,7 +43,7 @@ const KudosForm = props => (
         type="text"
         placeholder="Kudos Title"
         onChange={props.updateKudosTitle}
-        value-={props.kudosTitle}
+        value-={props.title}
       />
     </FormGroup>
     <FormGroup>
@@ -54,12 +51,10 @@ const KudosForm = props => (
         type="textarea"
         placeholder="Kudos text"
         onChange={props.updateKudosText}
-        value={props.kudosText}
+        value={props.comment}
       />
-    </FormGroup>
-    <FormGroup>
-      <Button onClick={props.postKudos}> Submit </Button>
     </FormGroup>
   </Form>
 );
+
 export default KudosForm;
