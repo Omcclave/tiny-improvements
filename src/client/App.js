@@ -26,15 +26,9 @@ import axios from "axios";
 
 let container = {
   backgroundImage: "url(https://images4.alphacoders.com/592/592188.jpg)",
-  height: "65vh"
-  // BackgroundAttachment: fixed
-  // BackgroundRepeat: norepeat
+  height: "65vh",
+  backgroundColor: "#e2e9ee"
 };
-
-// let background = {
-//   background: "#e2e9ee"
-// };
-
 class App extends Component {
   constructor(props) {
     super(props);

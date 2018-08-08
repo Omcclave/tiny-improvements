@@ -12,7 +12,7 @@ import {
 import { Image, circle } from "react-bootstrap";
 
 const AwardCard = props => (
-  <Card>
+  <Card style={{ marginBottom: "3px" }}>
     <CardBody>
       <p>#MakeAmericaGreatAgain</p>
       <Row>
@@ -39,7 +39,8 @@ const AwardCard = props => (
             width="100px"
             href="https://twitter.com/realdonaldtrump"
             color="info"
-            // pill
+            style={{ padding: "15px" }}
+            pill
           >
             Following
           </Badge>
